@@ -1,32 +1,42 @@
+```
+npm install -g erect
+```
+
 # NodeJS Development
   A heavily opinionated Project Starter by Ken.
   __root directory = project './' directory__
 
+
+#TODO
+  * eslintrc support
+  * man page
+
+
 # Why?
-  Because I dont like editing package.json if not neccessary and making a nodejs boilerplate is counter productive
+  Because I dont like installing yeoman and making a nodejs boilerplate is counter productive
 
 # Git
-    Install Git
-      OSX: brew install git
-      linux: yum install git or apt-get install git
-      Windows: chocolatey install git
+    * Install Git
+      * OSX: brew install git
+      * linux: yum install git or apt-get install git
+      * Windows: chocolatey install git
 
 # Node
-    Install node
-      OSX: brew install node
-      linux: yum install node or apt-get install node
-      windows: [node](https://nodejs.org/en/download/) or chocolatey install node
+    * Install node
+      * OSX: brew install node
+      * linux: yum install node or apt-get install node
+      * windows: [node](https://nodejs.org/en/download/) or chocolatey install node
 # Project Start
       ```
         mkdir BestNodeJSProject
         npm init
       ```
 # Editor
-  Use either [atom](https://atom.io/) or [sublime](http://www.sublimetext.com/3)
+  * Use either [atom](https://atom.io/) or [sublime](http://www.sublimetext.com/3)
 
 # Documentation
-  Use markdown in README.md
-  Cheatsheet is in
+  * Use markdown in README.md
+  * Cheatsheet is in
   ```
   markdown/
   ```

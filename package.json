@@ -1,11 +1,12 @@
 {
-  "name": "start-node",
-  "version": "0.0.1",
+  "name": "erect",
+  "version": "0.0.2",
   "description": "a global command to start your node tutorial on manual creation is also included",
   "main": "start.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "preferGlobal": true,
   "keywords": [
     "start",
     "node",
@@ -16,6 +17,17 @@
     "builder",
     "gulp"
   ],
+  "bin": {
+    "start": "bin/cmd.js",
+    "erect": "bin/cmd.js",
+    "st":    "bin/cmd.js",
+    "ert":   "bin/cmd.js",
+    "ect":   "bin/cmd.js",
+    "ere":   "bin/cmd.js"
+  },
+  "directories": {
+    "man": "bin/man"
+  },
   "author": "Kenichi Shibata <kenichi.shibata@fastretailing.com> (kenichishibata31.github.io)",
   "license": "MIT"
 }

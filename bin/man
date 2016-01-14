@@ -1,0 +1,41 @@
+NAME
+     erect -- create start node configuration
+
+SYNOPSIS
+     erect [options] ...
+     [alias (start|ect|ere|ert|st)]
+
+DESCRIPTION
+     A node project starter by ken. Since he does not want to install yeoman or any other devDependencies and wants to type one command to set up node editorconfig, gulpfile(lint),
+     .gitignore and .jshintrc (or .eslintrc)
+     The options are as follows:
+
+     help
+             Shows this help file.
+
+     print
+             shows the arguments in node
+
+     jshint
+             creates jshintrc gitignore editorconfig
+
+     jshint --gulp [alias gulp]
+             creates jshintrc gitignore editorconfig and gulpfile lint (must 'npm install gulp jshint gulp-jshint --save-dev')
+
+
+     The user must have write permission in the parent directory.
+
+DIAGNOSTICS
+     The start utility exits 0 on success, and >0 if an error occurs.
+
+SEE ALSO
+
+
+COMPATIBILITY
+
+
+STANDARDS
+     No standards (this is configurable module)
+
+HISTORY
+     created in 2016 january 14 by kenichi shibata
