@@ -3,7 +3,7 @@ npm install -g erect
 erect all
 ```
 
-# NodeJS Development
+# Node Erect!
  create ___gulpfile.js, .editorconfig, .gitignore, .jshintrc___ using commandline
 
 # What?
@@ -20,7 +20,7 @@ erect all
 - - - -
 - - - -
 - - - -
-markdown : - - - -
+- - - -
 
 
 # Git
