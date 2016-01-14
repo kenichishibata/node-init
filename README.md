@@ -1,20 +1,21 @@
 ```
-npm install -g erect
-erect all
+npm install -g node-init
+init all
 ```
 
-# Node Erect!
- create ___gulpfile.js, .editorconfig, .gitignore, .jshintrc___ using commandline
+# Node INIT!
+ create node js standard ___gulpfile.js, .editorconfig, .gitignore, .jshintrc___ using commandline
 
 # What?
-  Instantly create linting file and configuration
+  Instantly create linting file and editor configuration
 
 # Why?
   Because I dont like installing yeoman and making a nodejs boilerplate is counter productive
 
-
-
-
+# Documentation
+```
+init help
+```
 
 # Manual Tips
 - - - -

@@ -1,6 +1,6 @@
 {
-  "name": "erect",
-  "version": "0.0.3",
+  "name": "node-init",
+  "version": "0.0.1",
   "description": "a global command to start your node tutorial on manual creation is also included",
   "main": "start.js",
   "scripts": {
@@ -18,15 +18,14 @@
     "gulp",
     "jshint",
     "gitignore",
-    "gulpfile",
+    "gulpfile"
   ],
   "bin": {
     "start": "bin/cmd.js",
-    "erect": "bin/cmd.js",
+    "init": "bin/cmd.js",
     "st":    "bin/cmd.js",
-    "ert":   "bin/cmd.js",
-    "ect":   "bin/cmd.js",
-    "ere":   "bin/cmd.js"
+    "node-start": "bin/all.js"
+
   },
   "directories": {
     "man": "bin/man"
