@@ -15,7 +15,10 @@
     "lazy.jshint",
     "editorconfig",
     "builder",
-    "gulp"
+    "gulp",
+    "jshint",
+    "gitignore",
+    "gulpfile",
   ],
   "bin": {
     "start": "bin/cmd.js",

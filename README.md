@@ -4,14 +4,21 @@ erect all
 ```
 
 # NodeJS Development
-  A heavily opinionated Project Starter by Ken.
-  __root directory = project './' directory__
+ create ___gulpfile.js, .editorconfig, .gitignore, .jshintrc___ using commandline
 
 # What?
   Instantly create linting file and configuration
 
 # Why?
   Because I dont like installing yeoman and making a nodejs boilerplate is counter productive
+
+
+
+
+
+# Manual Tips
+
+
 
 # Git
     * Install Git
