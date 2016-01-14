@@ -1,15 +1,12 @@
 ```
 npm install -g erect
+erect all
 ```
 
 # NodeJS Development
   A heavily opinionated Project Starter by Ken.
   __root directory = project './' directory__
 
-
-#TODO
-  * eslintrc support
-  * man page
 
 
 # Why?
@@ -97,3 +94,7 @@ npm install -g erect
 
 # EOF
       Now you can start working with nodejs
+
+#TODO
+        * eslintrc support
+        * man page

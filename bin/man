@@ -16,13 +16,23 @@ DESCRIPTION
      print
              shows the arguments in node
 
-     jshint
-             creates jshintrc gitignore editorconfig
+     all
+             creates jshintrc gitignore editorconfig gulpfile
 
-     jshint --gulp [alias gulp]
+     all --no-gulp [alias (nogulp)]
              creates jshintrc gitignore editorconfig and gulpfile lint (must 'npm install gulp jshint gulp-jshint --save-dev')
 
+     jshint
+             creates .jshintrc
 
+     gitignore
+             creates .gitignore
+
+     editorconfig
+             creates .editorconfig
+
+     gulp
+             creates gulpfile (does not install it automatically)
      The user must have write permission in the parent directory.
 
 DIAGNOSTICS
