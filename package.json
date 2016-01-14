@@ -1,0 +1,21 @@
+{
+  "name": "start-node",
+  "version": "0.0.1",
+  "description": "a global command to start your node tutorial on manual creation is also included",
+  "main": "start.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "start",
+    "node",
+    "boilerplate",
+    "fast",
+    "lazy.jshint",
+    "editorconfig",
+    "builder",
+    "gulp"
+  ],
+  "author": "Kenichi Shibata <kenichi.shibata@fastretailing.com> (kenichishibata31.github.io)",
+  "license": "MIT"
+}
