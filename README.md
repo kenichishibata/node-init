@@ -17,7 +17,10 @@ erect all
 
 
 # Manual Tips
-
+- - - -
+- - - -
+- - - -
+markdown : - - - -
 
 
 # Git
