@@ -27,6 +27,7 @@
     "node-start": "bin/all.js"
 
   },
+  "repository": "https://github.com/kenichishibata31/node-init",
   "directories": {
     "man": "bin/man"
   },
