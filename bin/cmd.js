@@ -14,14 +14,14 @@ var extendedArgs = process.argv.slice(3);
     console.log(userArgs);
   }
   else if (userArgs == 'all'){
-      var jshint = fs.createReadStream(__dirname+'../airbnb/linters/.jshintrc').pipe(fs.createWriteStream('./.jshintrc'));
-      var editorConfig = fs.createReadStream(__dirname+'../editorConfig/.editorconfig').pipe(fs.createWriteStream('./.editorconfig'));
-      var gulpFile = fs.createReadStream(__dirname+'../gulp/gulpfile.js').pipe(fs.createWriteStream('./gulpfile.js'));
-      var gitignore = fs.createReadStream(__dirname+'../gitignore/.gitignore').pipe(fs.createWriteStream('./.gitignore'));
+      var jshint = fs.createReadStream(__dirname+'/../airbnb/linters/jshintrc').pipe(fs.createWriteStream('./.jshintrc'));
+      var editorConfig = fs.createReadStream(__dirname+'/../editorConfig/editorconfig').pipe(fs.createWriteStream('./.editorconfig'));
+      var gulpFile = fs.createReadStream(__dirname+'/../gulp/gulpfile.js').pipe(fs.createWriteStream('./gulpfile.js'));
+      var gitignore = fs.createReadStream(__dirname+'/../gitignore/gitignore').pipe(fs.createWriteStream('./.gitignore'));
     if(extendedArgs == '--no-gulp'){
-      var editorConfig = fs.createReadStream(__dirname+'../editorConfig/.editorconfig').pipe(fs.createWriteStream('./.editorconfig'));
-      var gulpFile = fs.createReadStream(__dirname+'../gulp/gulpfile.js').pipe(fs.createWriteStream('./gulpfile.js'));
-      var gitignore = fs.createReadStream(__dirname+'../gitignore/.gitignore').pipe(fs.createWriteStream('./.gitignore'));
+      var editorConfig = fs.createReadStream(__dirname+'/../editorConfig/editorconfig').pipe(fs.createWriteStream('./.editorconfig'));
+      var gulpFile = fs.createReadStream(__dirname+'/../gulp/gulpfile.js').pipe(fs.createWriteStream('./gulpfile.js'));
+      var gitignore = fs.createReadStream(__dirname+'/../gitignore/gitignore').pipe(fs.createWriteStream('./.gitignore'));
     }
   }
   else if(userArgs == 'eslint'){
@@ -29,16 +29,16 @@ var extendedArgs = process.argv.slice(3);
   }
 
   else if(userArgs == 'gulp'){
-    var gulpFile = fs.createReadStream(__dirname+'../gulp/gulpfile.js').pipe(fs.createWriteStream('./gulpfile.js'));
+    var gulpFile = fs.createReadStream(__dirname+'/../gulp/gulpfile.js').pipe(fs.createWriteStream('./gulpfile.js'));
   }
   else if(userArgs =='editorconfig'){
-    var editorConfig = fs.createReadStream(__dirname+'../editorConfig/.editorconfig').pipe(fs.createWriteStream('./.editorconfig'));
+    var editorConfig = fs.createReadStream(__dirname+'/../editorConfig/editorconfig').pipe(fs.createWriteStream('./.editorconfig'));
   }
   else if(userArgs == 'jshint'){
-    var jshint = fs.createReadStream(__dirname+'../airbnb/linters/.jshintrc').pipe(fs.createWriteStream('./.jshintrc'));
+    var jshint = fs.createReadStream(__dirname+'/../airbnb/linters/jshintrc').pipe(fs.createWriteStream('./.jshintrc'));
   }
   else if(userArgs == 'gitignore'){
-    var gitignore = fs.createReadStream(__dirname+'../gitignore/.gitignore').pipe(fs.createWriteStream('./.gitignore'));
+    var gitignore = fs.createReadStream(__dirname+'/../gitignore/gitignore').pipe(fs.createWriteStream('./.gitignore'));
   }
   else{
       console.log(__dirname);

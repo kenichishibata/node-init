@@ -1,6 +1,6 @@
 {
   "name": "node-init",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "a global command to start your node tutorial on manual creation is also included",
   "main": "start.js",
   "scripts": {
