@@ -1,9 +1,8 @@
 NAME
-     erect -- create start node configuration
+     init -- create start node configuration
 
 SYNOPSIS
-     erect [options] ...
-     [alias (start|ect|ere|ert|st)]
+     init [options] ...
 
 DESCRIPTION
      A node project starter by ken. Since he does not want to install yeoman or any other devDependencies and wants to type one command to set up node editorconfig, gulpfile(lint),
