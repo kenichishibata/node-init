@@ -4,7 +4,7 @@ init all
 ```
 
 # Node INIT!
- create node js AirBnB based standards ___gulpfile.js, .editorconfig, .gitignore, .jshintrc___ using commandline
+ create node js AirBnB based standards ___gulpfile.js, .editorconfig, .gitignore, .jshintrc, .jscs___ using commandline
 
 # What?
   Instantly create linting file and editor configuration
