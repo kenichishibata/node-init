@@ -23,7 +23,7 @@
   "bin": {
     "start": "bin/cmd.js",
     "init": "bin/cmd.js",
-    "st": "bin/cmd.js",
+    "st": "bin/cmd.js"
   },
   "repository": "https://github.com/kenichishibata31/node-init",
   "directories": {
