@@ -20,14 +20,14 @@
     ],
     "disallowMixedSpacesAndTabs": true,
     "disallowTrailingWhitespace": true,
-    "requireTrailingComma": { "ignoreSingleLine": true },
+    "requireTrailingComma": false,
     "requireSpaceAfterComma": true,
     "disallowYodaConditions": true,
     "disallowKeywords": [ "with" ],
-    "disallowKeywordsOnNewLine": ["else"],
+    "disallowKeywordsOnNewLine": false,
     "disallowMultipleLineBreaks": true,
     "disallowMultipleLineStrings": true,
-    "disallowMultipleVarDecl": true,
+    "disallowMultipleVarDecl":"exceptUndefined",
     "disallowSpaceBeforeComma": true,
     "disallowSpaceBeforeSemicolon": true,
     "requireSpaceBeforeBlockStatements": true,
@@ -72,5 +72,5 @@
     "safeContextKeyword": "_this",
     "validateLineBreaks": "LF",
     "validateQuoteMarks": { "mark": "'", "escape": true, "ignoreJSX": true },
-    "validateIndentation": 2
+    "validateIndentation": "\t"
 }
