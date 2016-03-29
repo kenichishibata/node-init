@@ -1,6 +1,6 @@
 {
   "name": "node-init",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "a global command to start your node tutorial on manual creation is also included",
   "main": "start.js",
   "scripts": {
@@ -24,7 +24,6 @@
     "start": "bin/cmd.js",
     "init": "bin/cmd.js",
     "st": "bin/cmd.js",
-    "node-start": "bin/all.js"
   },
   "repository": "https://github.com/kenichishibata31/node-init",
   "directories": {

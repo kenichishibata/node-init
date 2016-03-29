@@ -1,12 +1,11 @@
 #!/usr/bin/env node
-
-var fs = require('fs');
+var cpipe = require('./cpipe.js');
 
 var userArgs = process.argv.slice(2);
 var extendedArgs = process.argv.slice(3);
 
   if (userArgs == 'help') {
-      fs.createReadStream(__dirname + '/man').pipe(process.stdout);
+      cpipe('/man',null);
       return;
   }
   else if(userArgs =='print'){
@@ -14,22 +13,26 @@ var extendedArgs = process.argv.slice(3);
     console.log(userArgs);
   }
   else if (userArgs == 'all'){
-      var jshint = fs.createReadStream(__dirname+'/../airbnb/linters/jshintrc').pipe(fs.createWriteStream('./.jshintrc'));
-      var editorConfig = fs.createReadStream(__dirname+'/../editorConfig/editorconfig').pipe(fs.createWriteStream('./.editorconfig'));
-      var gulpFile = fs.createReadStream(__dirname+'/../gulp/gulpfile.js').pipe(fs.createWriteStream('./gulpfile.js'));
-      var gitignore = fs.createReadStream(__dirname+'/../gitignore/gitignore').pipe(fs.createWriteStream('./.gitignore'));
-      var jscs = fs.createReadStream(__dirname+'/../airbnb/style/jscs').pipe(fs.createWriteStream('./.jscsrc'));
+    cpipe('/../airbnb/linters/jshintrc','.jshintrc');
+    cpipe('/../editorConfig/editorconfig','.editorconfig');
+    cpipe('/../gitignore/gitignore','.gitignore');
+    cpipe('/../airbnb/style/jscs','.jscsrc');
+    cpipe('/../gulp/gulpfile.js','gulpfile.js');
+    cpipe('/../npmrc/npmrc','.npmrc');
+
     if(extendedArgs == '--no-gulp'){
-      var editorConfig = fs.createReadStream(__dirname+'/../editorConfig/editorconfig').pipe(fs.createWriteStream('./.editorconfig'));
-      var gulpFile = fs.createReadStream(__dirname+'/../gulp/gulpfile.js').pipe(fs.createWriteStream('./gulpfile.js'));
-      var gitignore = fs.createReadStream(__dirname+'/../gitignore/gitignore').pipe(fs.createWriteStream('./.gitignore'));
-      var jscs = fs.createReadStream(__dirname+'/../airbnb/style/jscs').pipe(fs.createWriteStream('./.jscsrc'));
+      cpipe('/../airbnb/linters/jshintrc','.jshintrc');
+      cpipe('/../editorConfig/editorconfig','.editorconfig');
+      cpipe('/../gitignore/gitignore','.gitignore');
+      cpipe('/../airbnb/style/jscs','.jscsrc');
+      cpipe('/../npmrc/npmrc','.npmrc');
       }
     if(extendedArgs == '--no-jscs'){
-      var jshint = fs.createReadStream(__dirname+'/../airbnb/linters/jshintrc').pipe(fs.createWriteStream('./.jshintrc'));
-      var editorConfig = fs.createReadStream(__dirname+'/../editorConfig/editorconfig').pipe(fs.createWriteStream('./.editorconfig'));
-      var gulpFile = fs.createReadStream(__dirname+'/../gulp/gulpfile.js').pipe(fs.createWriteStream('./gulpfile.js'));
-      var gitignore = fs.createReadStream(__dirname+'/../gitignore/gitignore').pipe(fs.createWriteStream('./.gitignore'));
+      cpipe('/../airbnb/linters/jshintrc','.jshintrc');
+      cpipe('/../editorConfig/editorconfig','.editorconfig');
+      cpipe('/../gitignore/gitignore','.gitignore');
+      cpipe('/../gulp/gulpfile.js','gulpfile.js');
+      cpipe('/../npmrc/npmrc','.npmrc');
     }
   }
   else if(userArgs == 'eslint'){
@@ -37,19 +40,20 @@ var extendedArgs = process.argv.slice(3);
   }
 
   else if(userArgs == 'gulp'){
-    var gulpFile = fs.createReadStream(__dirname+'/../gulp/gulpfile.js').pipe(fs.createWriteStream('./gulpfile.js'));
+    cpipe('/../gulp/gulpfile.js','gulpfile.js');
   }
   else if(userArgs =='editorconfig'){
-    var editorConfig = fs.createReadStream(__dirname+'/../editorConfig/editorconfig').pipe(fs.createWriteStream('./.editorconfig'));
+    cpipe('/../editorConfig/editorconfig','.editorconfig');
   }
   else if(userArgs == 'jshint'){
-    var jshint = fs.createReadStream(__dirname+'/../airbnb/linters/jshintrc').pipe(fs.createWriteStream('./.jshintrc'));
+    cpipe('/../airbnb/linters/jshintrc','.jshintrc');
   }
   else if(userArgs == 'gitignore'){
-    var gitignore = fs.createReadStream(__dirname+'/../gitignore/gitignore').pipe(fs.createWriteStream('./.gitignore'));
+    cpipe('/../gitignore/gitignore','.gitignore');
+
   }
   else if(userArgs == 'jscs'){
-    var jscs = fs.createReadStream(__dirname+'/../airbnb/style/jscs').pipe(fs.createWriteStream('./.jscsrc'));
+    cpipe('/../airbnb/style/jscs','.jscsrc');
    }
   else{
       console.log(__dirname);
