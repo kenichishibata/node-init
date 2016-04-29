@@ -20,7 +20,9 @@
    * ENFORCING OPTIONS
    * =================
    */
-
+  // For node js loop func should be true since function is actually a callback
+  "loopfunc" : true,
+  
   // Force all variable names to use either camelCase style or UPPER_CASE
   // with underscores.
   "camelcase": true,
