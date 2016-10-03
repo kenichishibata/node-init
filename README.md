@@ -18,39 +18,34 @@ init help
 ```
 
 # Manual Tips
-- - - -
-- - - -
-- - - -
-- - - -
 
-
-# Git
+## Git
     * Install Git
       * OSX: brew install git
       * linux: yum install git or apt-get install git
       * Windows: chocolatey install git
 
-# Node
+## Node
     * Install node
       * OSX: brew install node
       * linux: yum install node or apt-get install node
       * windows: [node](https://nodejs.org/en/download/) or chocolatey install node
-# Project Start
+## Project Start
       ```
         mkdir BestNodeJSProject
         npm init
       ```
-# Editor
+## Editor
   * Use either [atom](https://atom.io/) or [sublime](http://www.sublimetext.com/3)
 
-# Documentation
+## Documentation
   * Use markdown in README.md
   * Cheatsheet is in
   ```
   markdown/
   ```
 
-# Editorconfig
+## Editorconfig
 ## Atom(recommended)
   add .editorconfig file in
   ```
@@ -69,7 +64,7 @@ init help
   Install [packagecontrol](https://packagecontrol.io/)
   Install [sublime editorconfig](https://github.com/sindresorhus/editorconfig-sublime)
 
-# Static Linting
+## Static Linting
 ## jshint(recommended)
   Install JShint in dev environment
   ```
