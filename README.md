@@ -1,6 +1,6 @@
 ```
 npm install -g node-init
-init all
+node-init all
 ```
 
 # Node INIT!
@@ -14,7 +14,7 @@ init all
 
 # Documentation
 ```
-init help
+node-init help
 ```
 
 # Manual Tips
